@@ -1,0 +1,36 @@
+# Binaries and executables
+libdns-websupport
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go build artifacts
+/vendor/
+/dist/
+*.sum~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment and credentials
+.env
+.env.local
+*.key
+*.pem
+
+# Test/output directories
+/.caddy/
+/certificates/
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini

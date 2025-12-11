@@ -25,14 +25,14 @@ Important: This repo includes a Windows-friendly test app (`main.go`) that can:
 To use this provider in your project, add it as a dependency:
 
 ```bash
-go get github.com/goozoon/libdns-websupport
+go get github.com/libdns/websupport
 ```
 
 Alternatively, clone the repository:
 
 ```bash
-git clone https://github.com/goozoon/libdns-websupport.git
-cd libdns-websupport
+git clone https://github.com/libdns/websupport.git
+cd websupport
 go mod download
 ```
 
@@ -48,7 +48,7 @@ package main
 import (
     "context"
     "github.com/libdns/libdns"
-    "libdns-websupport/websupport"
+    "github.com/libdns/websupport/websupport"
     "time"
 )
 
@@ -142,7 +142,7 @@ export WEBSUPPORT_TEST_ZONE="your-domain.com"
 
 **Complete test command example:**
 ```bash
-cd /path/to/libdns-websupport && \
+cd /path/to/websupport && \
   go build . && \
   export WEBSUPPORT_API_KEY="your-api-key" && \
   export WEBSUPPORT_API_SECRET="your-api-secret" && \
@@ -224,7 +224,7 @@ import (
     "time"
 
     "github.com/libdns/libdns"
-    "libdns-websupport/websupport"
+    "github.com/libdns/websupport/websupport"
 )
 
 func main() {
@@ -478,15 +478,15 @@ Caddy can automatically obtain certificates using this DNS provider. You'll need
 
 **Linux/Mac:**
 ```bash
-git clone https://github.com/goozoon/libdns-websupport.git
-cd libdns-websupport
+git clone https://github.com/libdns/websupport.git
+cd websupport
 go build .
 ```
 
 **Windows:**
 ```powershell
-git clone https://github.com/goozoon/libdns-websupport.git
-cd libdns-websupport
+git clone https://github.com/libdns/websupport.git
+cd websupport
 go build .
 ```
 

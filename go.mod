@@ -1,4 +1,4 @@
-module libdns-websupport
+module github.com/libdns/websupport
 
 go 1.25.4
 

@@ -19,7 +19,7 @@ import (
 	"strings"
 	"time"
 
-	"libdns-websupport/websupport"
+	"github.com/libdns/websupport/websupport"
 
 	"github.com/libdns/libdns"
 )

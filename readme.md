@@ -10,6 +10,17 @@ Important: This repo includes a Windows-friendly test app (`main.go`) that can:
 
 ---
 
+## Import path note
+
+You may notice imports like `github.com/libdns/websupport/websupport` (double `websupport`).
+This is because the provider implementation lives in the `websupport/` subdirectory of the repository.
+
+- The module path is `github.com/libdns/websupport` (the repository root).
+- The package that implements the provider is in the `websupport` subfolder, so the full import path becomes `github.com/libdns/websupport/websupport`.
+
+If you prefer a single-segment import (for example `github.com/libdns/websupport`), we can reorganize the repository so the provider package is at the repository root and move the test application into `cmd/` (recommended). Let me know if you want me to do that.
+
+
 ## Features
 
 - **ACME DNS-01 Support**: Solve DNS challenges for Let's Encrypt and other ACME providers
